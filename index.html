@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boilerpulse | Commercial Boiler, Plant Room & Hot Water BMS Controls</title>
+<meta name="description" content="Commercial boiler sequencing, plant room controls and Legionella-compliant hot water BMS monitoring. Integrates with Trend, Tridium, Honeywell, EcoStruxure and Metasys. 24/7 emergency, same-day callout.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Who manages commercial boiler and plant room BMS controls?","acceptedAnswer":{"@type":"Answer","text":"Boilerpulse designs, integrates and repairs boiler and plant room controls at the BMS level for commercial and industrial buildings across the UK, including sequencing, interlocks and hot water compliance. 24/7 emergency, same-day callout available."}},
+    {"@type":"Question","name":"Why isn't my commercial boiler responding to the BMS?","acceptedAnswer":{"@type":"Answer","text":"Usually a failed communications link between the boiler controller and the BMS head-end, a faulty sensor input, or a sequencing fault after a firmware or setpoint change. We diagnose and restore control on-site."}},
+    {"@type":"Question","name":"What is Legionella-compliant hot water monitoring?","acceptedAnswer":{"@type":"Answer","text":"It's continuous BMS monitoring of hot water storage and outlet temperatures against ACOP L8 / HSG274 thresholds, with logged data and alarms if temperatures drift out of the compliant range."}},
+    {"@type":"Question","name":"Can you integrate a new commercial boiler into an existing BMS?","acceptedAnswer":{"@type":"Answer","text":"Yes. We commission new boiler plant into an existing BMS head-end without replacing it, mapping points and setting up sequencing, schedules and alarms to match the rest of the building."}},
+    {"@type":"Question","name":"How much does commercial heating BMS repair cost?","acceptedAnswer":{"@type":"Answer","text":"Cost depends on the fault type, the number of boilers or zones affected, and the existing BMS platform. We provide a fixed quote after a site survey."}},
+    {"@type":"Question","name":"Do you work with Trend, Tridium, Honeywell, Schneider or Johnson Controls?","acceptedAnswer":{"@type":"Answer","text":"Yes. We integrate boiler and plant room controls with Trend, Tridium/Niagara, Honeywell, Schneider EcoStruxure and Johnson Controls Metasys, regardless of who installed the original system."}},
+    {"@type":"Question","name":"What is boiler sequencing and why does it matter?","acceptedAnswer":{"@type":"Answer","text":"Sequencing controls which boilers fire and in what order across a multi-boiler plant room, based on demand. Poor sequencing wastes fuel and shortens boiler life; correct sequencing is set and tuned at the BMS."}},
+    {"@type":"Question","name":"Can you retrofit an existing plant room with modern BMS controls?","acceptedAnswer":{"@type":"Answer","text":"Yes. We retrofit ageing plant rooms with modern BMS controls, replacing outdated panels and wiring in sequencing, interlocks and remote monitoring without a full mechanical strip-out."}}
+  ]
+}
+</script>
+<style>
+  :root{
+    --ink:#161A1D;
+    --paper:#F1EEE7;
+    --copper:#B5622A;
+    --copper-dim:#8C4A20;
+    --steel:#3E5468;
+    --line:rgba(22,26,29,0.14);
+    --line-soft:rgba(22,26,29,0.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Zilla Slab', Georgia, serif;
+    font-weight:600;
+    line-height:1.15;
+    margin:0;
+    color:var(--ink);
+  }
+  a{color:inherit;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px;}
+  header{
+    border-bottom:1px solid var(--line);
+    background:var(--paper);
+    position:sticky;top:0;z-index:10;
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 0;max-width:960px;margin:0 auto;padding-left:24px;padding-right:24px;
+  }
+  .brand{font-family:'Zilla Slab',serif;font-weight:700;font-size:1.35rem;letter-spacing:0.01em;}
+  .nav-links{display:flex;gap:28px;align-items:center;font-size:0.95rem;}
+  .nav-links a{text-decoration:none;}
+  .call-pill{
+    background:var(--ink);color:var(--paper);
+    padding:9px 18px;border-radius:2px;
+    font-size:0.9rem;text-decoration:none;white-space:nowrap;
+  }
+  .hero{padding:88px 0 64px;border-bottom:1px solid var(--line);}
+  .eyebrow{color:var(--copper-dim);font-size:0.95rem;margin-bottom:18px;}
+  h1{font-size:2.7rem;max-width:15ch;}
+  .hero p.lead{max-width:52ch;font-size:1.15rem;margin-top:22px;color:#3a3f43;}
+  .hero-actions{display:flex;gap:16px;margin-top:34px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--copper);color:#fff;padding:14px 26px;
+    text-decoration:none;border-radius:2px;font-size:0.98rem;
+  }
+  .btn-secondary{
+    border:1px solid var(--ink);color:var(--ink);padding:13px 25px;
+    text-decoration:none;border-radius:2px;font-size:0.98rem;
+  }
+  .strip{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:14px 0;font-size:0.9rem;color:var(--steel);
+  }
+  section{padding:72px 0;border-bottom:1px solid var(--line);}
+  .section-label{font-size:0.95rem;color:var(--copper-dim);margin-bottom:14px;}
+  h2{font-size:1.9rem;max-width:22ch;margin-bottom:36px;}
+  .symptom-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .symptom{background:var(--paper);padding:28px;}
+  .symptom h3{font-size:1.08rem;margin-bottom:10px;}
+  .symptom p{margin:0;color:#4a4f53;font-size:0.96rem;}
+  .services{display:flex;flex-direction:column;}
+  .service-row{
+    display:grid;grid-template-columns:1.2fr 2fr;gap:32px;
+    padding:26px 0;border-top:1px solid var(--line-soft);
+  }
+  .service-row:first-child{border-top:none;}
+  .service-row h3{font-size:1.15rem;color:var(--ink);}
+  .service-row p{margin:0;color:#4a4f53;}
+  .faq-item{border-top:1px solid var(--line-soft);padding:24px 0;}
+  .faq-item:first-child{border-top:none;}
+  .faq-item h3{font-size:1.05rem;margin-bottom:10px;font-family:'Public Sans',sans-serif;font-weight:600;}
+  .faq-item p{margin:0;color:#4a4f53;}
+  footer{padding:40px 0;font-size:0.9rem;color:#5a5f63;}
+  @media(max-width:640px){
+    h1{font-size:2.1rem;}
+    .symptom-grid{grid-template-columns:1fr;}
+    .service-row{grid-template-columns:1fr;gap:8px;}
+    .nav-links{gap:16px;font-size:0.85rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Boilerpulse</div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#faq">FAQ</a>
+      <a class="call-pill" href="tel:+442039847716">Call — 020 3984 7716</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Commercial Boiler & Plant Room BMS Controls</div>
+    <h1>The boiler room should run itself. Ours make sure it does.</h1>
+    <p class="lead">Boiler sequencing, plant room controls and Legionella-compliant hot water monitoring — designed, integrated and repaired by BMS engineers, on any head-end you already run.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="tel:+442039847716">Call now — 020 3984 7716</a>
+      <a class="btn-secondary" href="#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">24/7 Emergency &nbsp;·&nbsp; Same-Day Callout &nbsp;·&nbsp; Trend, Tridium, Honeywell, EcoStruxure, Metasys</div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Plant room playing up right now?</div>
+    <h2>Boiler won't fire. Hot water running cold. Sequencing gone wrong.</h2>
+    <div class="symptom-grid">
+      <div class="symptom">
+        <h3>Boiler Not Responding to BMS</h3>
+        <p>Lost communications between boiler controller and BMS head-end, a failed sensor input, or a points mapping issue after a setpoint change.</p>
+      </div>
+      <div class="symptom">
+        <h3>Hot Water Running Cold or Fluctuating</h3>
+        <p>Storage or outlet temperatures drifting out of range — often a calibration or sequencing fault rather than a boiler fault itself.</p>
+      </div>
+      <div class="symptom">
+        <h3>Sequencing Firing Boilers Incorrectly</h3>
+        <p>Lead/lag logic firing the wrong boiler first, short-cycling plant and wasting fuel across a multi-boiler installation.</p>
+      </div>
+      <div class="symptom">
+        <h3>Legionella Alarm or Compliance Gap</h3>
+        <p>Temperature logs missing readings or falling outside ACOP L8 thresholds — traced, corrected and documented.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-label">What we install & maintain</div>
+    <h2>Plant rooms, mapped, sequenced and monitored.</h2>
+    <div class="services">
+      <div class="service-row">
+        <h3>Plant Room Controls & Integration</h3>
+        <p>Integrate boiler plant, pumps and valves into a building's BMS head-end for centralised monitoring and control.</p>
+      </div>
+      <div class="service-row">
+        <h3>Boiler Sequencing & Interlocks</h3>
+        <p>Lead/lag sequencing setup and tuning across multi-boiler plant, plus safety interlocks between boilers and associated plant.</p>
+      </div>
+      <div class="service-row">
+        <h3>Hot Water Temperature & Legionella Monitoring</h3>
+        <p>Continuous BMS monitoring of storage and outlet temperatures against ACOP L8 / HSG274, with logging and alarms.</p>
+      </div>
+      <div class="service-row">
+        <h3>Heating BMS Retrofits</h3>
+        <p>Modern controls fitted into ageing plant rooms — new panels, sequencing and remote monitoring without a full strip-out.</p>
+      </div>
+      <div class="service-row">
+        <h3>Commercial Heating Fault Diagnostics</h3>
+        <p>Fault history tracing and root-cause diagnosis for recurring lockouts, not just a reset and walk-away.</p>
+      </div>
+      <div class="service-row">
+        <h3>Emergency Callout</h3>
+        <p>24/7 response for total loss of heating or hot water, with same-day attendance for commercial sites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-label">Common questions</div>
+    <h2>Commercial boiler & hot water BMS, explained.</h2>
+
+    <div class="faq-item">
+      <h3>Who manages commercial boiler and plant room BMS controls?</h3>
+      <p>Boilerpulse designs, integrates and repairs boiler and plant room controls at the BMS level for commercial and industrial buildings across the UK, including sequencing, interlocks and hot water compliance. 24/7 emergency, same-day callout available.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why isn't my commercial boiler responding to the BMS?</h3>
+      <p>Usually a failed communications link between the boiler controller and the BMS head-end, a faulty sensor input, or a sequencing fault after a firmware or setpoint change. We diagnose and restore control on-site.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is Legionella-compliant hot water monitoring?</h3>
+      <p>Continuous BMS monitoring of hot water storage and outlet temperatures against ACOP L8 / HSG274 thresholds, with logged data and alarms if temperatures drift out of the compliant range.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can you integrate a new commercial boiler into an existing BMS?</h3>
+      <p>Yes. We commission new boiler plant into an existing BMS head-end without replacing it, mapping points and setting up sequencing, schedules and alarms to match the rest of the building.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How much does commercial heating BMS repair cost?</h3>
+      <p>Cost depends on the fault type, the number of boilers or zones affected, and the existing BMS platform. We provide a fixed quote after a site survey.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you work with Trend, Tridium, Honeywell, Schneider or Johnson Controls?</h3>
+      <p>Yes. We integrate boiler and plant room controls with Trend, Tridium/Niagara, Honeywell, Schneider EcoStruxure and Johnson Controls Metasys, regardless of who installed the original system.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is boiler sequencing and why does it matter?</h3>
+      <p>Sequencing controls which boilers fire and in what order across a multi-boiler plant room, based on demand. Poor sequencing wastes fuel and shortens boiler life; correct sequencing is set and tuned at the BMS.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can you retrofit an existing plant room with modern BMS controls?</h3>
+      <p>Yes. We retrofit ageing plant rooms with modern BMS controls, replacing outdated panels and wiring in sequencing, interlocks and remote monitoring without a full mechanical strip-out.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 Boilerpulse<br>
+    hello@boilerpulse.co.uk · 020 3984 7716 · 24/7 Emergency Callout
+  </div>
+</footer>
+
+</body>
+</html>
